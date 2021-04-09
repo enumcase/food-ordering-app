@@ -57,11 +57,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7409DF512620393C00E4D914 /* Views */ = {
+		7403B5ED2620557B00EB13AD /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 				7437CA31261F283000EC93B3 /* AppetizerListCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		7403B5EE2620558700EB13AD /* Images */ = {
+			isa = PBXGroup;
+			children = (
 				7437CA4C261F931F00EC93B3 /* RemoteImage.swift */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		7409DF512620393C00E4D914 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7403B5EE2620558700EB13AD /* Images */,
+				7403B5ED2620557B00EB13AD /* Cells */,
+				7409DF59262039EB00E4D914 /* UIKit Components */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -159,7 +176,6 @@
 				7437CA2E261F1F1500EC93B3 /* Models */,
 				7409DF522620394000E4D914 /* Screens */,
 				7409DF512620393C00E4D914 /* Views */,
-				7409DF59262039EB00E4D914 /* UIKit Components */,
 				7409DF5A26203A0B00E4D914 /* Resources */,
 				7437CA11261EDAF900EC93B3 /* Info.plist */,
 				7437CA0E261EDAF900EC93B3 /* Preview Content */,
