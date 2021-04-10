@@ -26,6 +26,8 @@
 		7437CA45261F8CA200EC93B3 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7437CA44261F8CA200EC93B3 /* LoadingView.swift */; };
 		7437CA49261F8D6400EC93B3 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7437CA48261F8D6400EC93B3 /* ColorExtensions.swift */; };
 		7437CA4D261F931F00EC93B3 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7437CA4C261F931F00EC93B3 /* RemoteImage.swift */; };
+		744F1D3626217FF000DCCC0B /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744F1D3526217FF000DCCC0B /* AccountViewModel.swift */; };
+		744F1D40262181E900DCCC0B /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744F1D3F262181E900DCCC0B /* StringExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		7437CA44261F8CA200EC93B3 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		7437CA48261F8D6400EC93B3 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		7437CA4C261F931F00EC93B3 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
+		744F1D3526217FF000DCCC0B /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		744F1D3F262181E900DCCC0B /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				7437CA22261F1B6900EC93B3 /* AccountView.swift */,
+				744F1D3526217FF000DCCC0B /* AccountViewModel.swift */,
 			);
 			path = AccountView;
 			sourceTree = "<group>";
@@ -140,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				7437CA48261F8D6400EC93B3 /* ColorExtensions.swift */,
+				744F1D3F262181E900DCCC0B /* StringExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -163,6 +169,7 @@
 		7409DF5B26203A3200E4D914 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				744F1D422621830E00DCCC0B /* Alerts */,
 				7437CA35261F28E400EC93B3 /* Network Managers */,
 				7409DF562620399A00E4D914 /* Extensions */,
 			);
@@ -212,7 +219,6 @@
 			isa = PBXGroup;
 			children = (
 				7437CA2B261F1F1100EC93B3 /* Appetizer.swift */,
-				7437CA40261F885C00EC93B3 /* Alert.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -224,6 +230,14 @@
 				7437CA39261F2A4700EC93B3 /* NetworkCallError.swift */,
 			);
 			path = "Network Managers";
+			sourceTree = "<group>";
+		};
+		744F1D422621830E00DCCC0B /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				7437CA40261F885C00EC93B3 /* Alert.swift */,
+			);
+			path = Alerts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +313,7 @@
 				7437CA49261F8D6400EC93B3 /* ColorExtensions.swift in Sources */,
 				7403B5FF2620DF9400EB13AD /* XDismissButton.swift in Sources */,
 				7437CA3A261F2A4700EC93B3 /* NetworkCallError.swift in Sources */,
+				744F1D3626217FF000DCCC0B /* AccountViewModel.swift in Sources */,
 				7437CA32261F283000EC93B3 /* AppetizerListCell.swift in Sources */,
 				7437CA3D261F2F8A00EC93B3 /* AppetizerListViewModel.swift in Sources */,
 				7437CA23261F1B6900EC93B3 /* AccountView.swift in Sources */,
@@ -310,6 +325,7 @@
 				7437CA09261EDAF400EC93B3 /* AppetizersApp.swift in Sources */,
 				7437CA41261F885C00EC93B3 /* Alert.swift in Sources */,
 				7437CA20261F1B5E00EC93B3 /* AppetizersListView.swift in Sources */,
+				744F1D40262181E900DCCC0B /* StringExtension.swift in Sources */,
 				7403B5F72620DE7200EB13AD /* PrimaryButton.swift in Sources */,
 				7437CA27261F1B7200EC93B3 /* OrderView.swift in Sources */,
 			);
