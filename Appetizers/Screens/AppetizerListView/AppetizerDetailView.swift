@@ -28,9 +28,9 @@ struct AppetizerDetailView: View {
                     .padding()
                 
                 HStack(spacing: 40) {
-                    NutritionInfoView(title: "Calories", value: appetizer.calories)
-                    NutritionInfoView(title: "Protein", value: appetizer.protein)
-                    NutritionInfoView(title: "Carbs", value: appetizer.carbs)
+                    NutritionInfoView(title: "Calories", value: "\(appetizer.calories)")
+                    NutritionInfoView(title: "Protein", value: "\(appetizer.protein) g")
+                    NutritionInfoView(title: "Carbs", value: "\(appetizer.carbs) g")
                 }
             }
             
@@ -69,7 +69,7 @@ struct AppetizerDetailView_Previews: PreviewProvider {
 
 struct NutritionInfoView: View {
     let title: String
-    let value: Int
+    let value: String
     
     var body: some View {
         VStack(spacing: 5) {
