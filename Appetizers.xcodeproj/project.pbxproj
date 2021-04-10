@@ -28,6 +28,9 @@
 		7437CA4D261F931F00EC93B3 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7437CA4C261F931F00EC93B3 /* RemoteImage.swift */; };
 		744F1D3626217FF000DCCC0B /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744F1D3526217FF000DCCC0B /* AccountViewModel.swift */; };
 		744F1D40262181E900DCCC0B /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744F1D3F262181E900DCCC0B /* StringExtension.swift */; };
+		744F1D452621870D00DCCC0B /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744F1D442621870D00DCCC0B /* Account.swift */; };
+		744F1D48262191D000DCCC0B /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744F1D47262191D000DCCC0B /* EmptyStateView.swift */; };
+		744F1D4D2621973200DCCC0B /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744F1D4C2621973200DCCC0B /* Order.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +57,9 @@
 		7437CA4C261F931F00EC93B3 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		744F1D3526217FF000DCCC0B /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		744F1D3F262181E900DCCC0B /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		744F1D442621870D00DCCC0B /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		744F1D47262191D000DCCC0B /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		744F1D4C2621973200DCCC0B /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,7 @@
 		7409DF512620393C00E4D914 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				744F1D4A2621938200DCCC0B /* Empty States */,
 				7403B5F52620DE5F00EB13AD /* Buttons */,
 				7403B5EE2620558700EB13AD /* Images */,
 				7403B5ED2620557B00EB13AD /* Cells */,
@@ -219,6 +226,8 @@
 			isa = PBXGroup;
 			children = (
 				7437CA2B261F1F1100EC93B3 /* Appetizer.swift */,
+				744F1D442621870D00DCCC0B /* Account.swift */,
+				744F1D4C2621973200DCCC0B /* Order.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -238,6 +247,14 @@
 				7437CA40261F885C00EC93B3 /* Alert.swift */,
 			);
 			path = Alerts;
+			sourceTree = "<group>";
+		};
+		744F1D4A2621938200DCCC0B /* Empty States */ = {
+			isa = PBXGroup;
+			children = (
+				744F1D47262191D000DCCC0B /* EmptyStateView.swift */,
+			);
+			path = "Empty States";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,7 +330,10 @@
 				7437CA49261F8D6400EC93B3 /* ColorExtensions.swift in Sources */,
 				7403B5FF2620DF9400EB13AD /* XDismissButton.swift in Sources */,
 				7437CA3A261F2A4700EC93B3 /* NetworkCallError.swift in Sources */,
+				744F1D4D2621973200DCCC0B /* Order.swift in Sources */,
 				744F1D3626217FF000DCCC0B /* AccountViewModel.swift in Sources */,
+				744F1D452621870D00DCCC0B /* Account.swift in Sources */,
+				744F1D48262191D000DCCC0B /* EmptyStateView.swift in Sources */,
 				7437CA32261F283000EC93B3 /* AppetizerListCell.swift in Sources */,
 				7437CA3D261F2F8A00EC93B3 /* AppetizerListViewModel.swift in Sources */,
 				7437CA23261F1B6900EC93B3 /* AccountView.swift in Sources */,
