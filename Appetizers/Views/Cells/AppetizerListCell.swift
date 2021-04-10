@@ -32,6 +32,6 @@ struct AppetizerListCell: View {
 
 struct AppetizerListCell_Previews: PreviewProvider {
     static var previews: some View {
-        AppetizerListCell(appetizer: MockData.sampleAppetizer)
+        AppetizerListCell(appetizer: MockData.sampleAppetizer1)
     }
 }
