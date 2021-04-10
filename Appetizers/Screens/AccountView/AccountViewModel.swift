@@ -8,34 +8,51 @@
 import SwiftUI
 
 final class AccountViewModel: ObservableObject {
-    @Published var firstName: String = ""
-    @Published var lastName: String = ""
-    @Published var email: String = ""
-    @Published var birthdate: Date = Date()
+    @AppStorage("userAccount") private var userAccountData: Data?
     
-    @Published var needExtraNapkins: Bool = false
-    @Published var needExtraFoodEatingItems: Bool = false
+    @Published var userAccount = Account(firstName: "",
+                                     lastName: "",
+                                     email: "",
+                                     birthDate: Date(),
+                                     needExtraNapkins: false,
+                                     needExtraFoodEatingItems: false)
     
     @Published var alertItem: AlertItem?
     
+    func didTapSaveChanges() {
+        guard isValidForm else { return }
+        
+        do {
+            let data = try JSONEncoder().encode(userAccount)
+            userAccountData = data
+            alertItem = AlertContext.userSavedSuccess
+        } catch {
+            alertItem = AlertContext.invalidUserAccountData
+        }
+    }
+    
+    func retrieveAccountInfo() {
+        guard let userAccountData = userAccountData else { return }
+        
+        do {
+            userAccount = try JSONDecoder().decode(Account.self, from: userAccountData)
+        } catch {
+            alertItem = AlertContext.invalidUserAccountData
+        }
+    }
+    
     var isValidForm: Bool {
-        guard !firstName.isEmpty && !lastName.isEmpty && !email.isEmpty else {
+        guard !userAccount.firstName.isEmpty && !userAccount.lastName.isEmpty && !userAccount.email.isEmpty else {
             alertItem = AlertContext.invalidForm
             return false
         }
         
-        guard email.isValidEmail else {
+        guard userAccount.email.isValidEmail else {
             alertItem = AlertContext.invalidEmail
             return false
         }
         
         return true
-    }
-    
-    func didTapSaveChanges() {
-        guard isValidForm else { return }
-        
-        print("Changes saved")
     }
     
 }

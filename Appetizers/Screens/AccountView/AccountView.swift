@@ -14,13 +14,13 @@ struct AccountView: View {
         NavigationView {
             Form {
                 Section(header: Text("Personal Info")) {
-                    TextField("First Name", text: $accountViewModel.firstName)
-                    TextField("Last Name", text: $accountViewModel.lastName)
-                    TextField("Email", text: $accountViewModel.email)
+                    TextField("First Name", text: $accountViewModel.userAccount.firstName)
+                    TextField("Last Name", text: $accountViewModel.userAccount.lastName)
+                    TextField("Email", text: $accountViewModel.userAccount.email)
                         .keyboardType(.emailAddress)
                         .autocapitalization(.none)
                         .disableAutocorrection(true)
-                    DatePicker("Birthdate", selection: $accountViewModel.birthdate, displayedComponents: .date)
+                    DatePicker("Birthdate", selection: $accountViewModel.userAccount.birthDate, displayedComponents: .date)
                     Button {
                         accountViewModel.didTapSaveChanges()
                     } label: {
@@ -29,15 +29,18 @@ struct AccountView: View {
                 }
                 
                 Section(header: Text("Requests")) {
-                    Toggle("Extra napkins", isOn: $accountViewModel.needExtraNapkins)
-                    Toggle("Extra food eating items", isOn: $accountViewModel.needExtraFoodEatingItems)
+                    Toggle("Extra napkins", isOn: $accountViewModel.userAccount.needExtraNapkins)
+                    Toggle("Extra food eating items", isOn: $accountViewModel.userAccount.needExtraFoodEatingItems)
                 }
                 .toggleStyle(SwitchToggleStyle(tint: .brandPrimary))
             }
             .navigationTitle("😎 Account")
-            .alert(item: $accountViewModel.alertItem) { alertItem in
-                Alert(title: alertItem.title, message: alertItem.message, dismissButton: alertItem.dismissButton)
-            }
+        }
+        .onAppear {
+            accountViewModel.retrieveAccountInfo()
+        }
+        .alert(item: $accountViewModel.alertItem) { alertItem in
+            Alert(title: alertItem.title, message: alertItem.message, dismissButton: alertItem.dismissButton)
         }
     }
 }
