@@ -32,7 +32,7 @@ struct AlertContext {
                                               message: Text("Unable to complete the request to the server. Please check your connection."),
                                               dismissButton: .default(Text("Ok")))
     
-    // MARK: ACCOUNT ALERTS
+    // MARK: - ACCOUNT ALERTS
     static let invalidForm = AlertItem(title: Text("Invalid form"),
                                           message: Text("One of the fields in the form is empty. Please complete the form."),
                                           dismissButton: .default(Text("Ok")))
@@ -41,4 +41,13 @@ struct AlertContext {
                                           message: Text("Please ensure email format is correct."),
                                           dismissButton: .default(Text("Ok")))
     
+    // MARK: - DATA PERSISTENCE ALERTS
+    
+    static let userSavedSuccess = AlertItem(title: Text("Account data saved"),
+                                          message: Text("Your accound data was successfully saved."),
+                                          dismissButton: .default(Text("Ok")))
+    
+    static let invalidUserAccountData = AlertItem(title: Text("Couldn't save account data"),
+                                          message: Text("There was an error saving or retrieving your account data."),
+                                          dismissButton: .default(Text("Ok")))
 }
