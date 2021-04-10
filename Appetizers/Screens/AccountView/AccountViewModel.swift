@@ -13,7 +13,7 @@ final class AccountViewModel: ObservableObject {
     @Published var userAccount = Account(firstName: "",
                                      lastName: "",
                                      email: "",
-                                     birthDate: Date(),
+                                     birthdate: Date(),
                                      needExtraNapkins: false,
                                      needExtraFoodEatingItems: false)
     

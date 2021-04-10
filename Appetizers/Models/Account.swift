@@ -11,7 +11,7 @@ struct Account: Codable {
     var firstName: String
     var lastName: String
     var email: String
-    var birthDate: Date
+    var birthdate: Date
     var needExtraNapkins: Bool
     var needExtraFoodEatingItems: Bool
 }

@@ -31,6 +31,7 @@
 		744F1D452621870D00DCCC0B /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744F1D442621870D00DCCC0B /* Account.swift */; };
 		744F1D48262191D000DCCC0B /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744F1D47262191D000DCCC0B /* EmptyStateView.swift */; };
 		744F1D4D2621973200DCCC0B /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744F1D4C2621973200DCCC0B /* Order.swift */; };
+		745F84E726223FFC00DB4500 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745F84E626223FFC00DB4500 /* DateExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		744F1D442621870D00DCCC0B /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		744F1D47262191D000DCCC0B /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		744F1D4C2621973200DCCC0B /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		745F84E626223FFC00DB4500 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 			children = (
 				7437CA48261F8D6400EC93B3 /* ColorExtensions.swift */,
 				744F1D3F262181E900DCCC0B /* StringExtension.swift */,
+				745F84E626223FFC00DB4500 /* DateExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				7437CA45261F8CA200EC93B3 /* LoadingView.swift in Sources */,
 				7437CA0B261EDAF400EC93B3 /* AppetizerTabView.swift in Sources */,
 				7437CA37261F28FB00EC93B3 /* NetworkManager.swift in Sources */,
+				745F84E726223FFC00DB4500 /* DateExtension.swift in Sources */,
 				7437CA4D261F931F00EC93B3 /* RemoteImage.swift in Sources */,
 				7403B5F12620565700EB13AD /* AppetizerDetailView.swift in Sources */,
 				7437CA09261EDAF400EC93B3 /* AppetizersApp.swift in Sources */,

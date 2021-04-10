@@ -20,7 +20,7 @@ struct AccountView: View {
                         .keyboardType(.emailAddress)
                         .autocapitalization(.none)
                         .disableAutocorrection(true)
-                    DatePicker("Birthdate", selection: $accountViewModel.userAccount.birthDate, displayedComponents: .date)
+                    DatePicker("Birthdate", selection: $accountViewModel.userAccount.birthdate, in: Date().oneHundredTenYearsAgo...Date().eighteenYearsAgo, displayedComponents: .date)
                     Button {
                         accountViewModel.didTapSaveChanges()
                     } label: {
