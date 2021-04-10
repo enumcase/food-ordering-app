@@ -27,7 +27,7 @@ struct MockData {
                                            name: "Asian Flank Steak",
                                            description: "This perfectly thin cut just melts in your mouth.",
                                            price: 8.99,
-                                           imageURL: "",
+                                           imageURL: "food-placeholder",
                                            calories: 300,
                                            protein: 14,
                                            carbs: 0)
