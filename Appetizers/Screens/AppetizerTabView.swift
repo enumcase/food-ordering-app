@@ -25,7 +25,7 @@ struct AppetizerTabView: View {
                     Image(systemName: "bag")
                     Text("Orders")
                 }
-        }.accentColor(.primary)
+        }.accentColor(.brandPrimary)
     }
 }
 
