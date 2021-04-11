@@ -8,7 +8,13 @@
 import SwiftUI
 
 @main
+
 struct AppetizersApp: App {
+    
+    init() {
+        UIView.appearance(whenContainedInInstancesOf: [UIAlertController.self]).tintColor = UIColor(Color.brandPrimary)
+    }
+    
     var order = Order()
     
     var body: some Scene {
@@ -16,4 +22,5 @@ struct AppetizersApp: App {
             AppetizerTabView().environmentObject(order)
         }
     }
+    
 }
