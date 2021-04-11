@@ -1,7 +1,7 @@
 # food-ordering-app
 SwiftUI app for ordering food.
 
-My attempt at learning SwiftUI.
+Might add a backend server support for POSTing food orders in the future.
 
 Some of the screens:
 
