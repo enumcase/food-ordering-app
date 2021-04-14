@@ -1,4 +1,4 @@
-# food-ordering-app
+# Foody
 SwiftUI app for ordering food.
 
 Might add a backend server support for POSTing food orders in the future.
