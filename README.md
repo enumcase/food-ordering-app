@@ -1,7 +1,5 @@
 # Foody
-SwiftUI app for ordering food.
-
-Might add a backend server support for POSTing food orders in the future.
+🍜 SwiftUI app for ordering food.
 
 Some of the screens:
 
